@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}  <!-- Load the static template tag library -->
+    <title>API</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'rest_framework/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rest_framework/css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rest_framework/css/prettify.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rest_framework/css/default.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>API</h1>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'rest_framework/js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'rest_framework/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'rest_framework/js/prettify.js' %}"></script>
+    <script type="text/javascript" src="{% static 'rest_framework/js/default.js' %}"></script>
+</body>
+</html>
